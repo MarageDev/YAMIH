@@ -4,5 +4,5 @@ extends Control
 @onready var label_state: Label = $VBoxContainer/Label4
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_released("hello"):
+	if Input.is_action_pressed("Up_1"):
 		label_name.text = "aaaaaa"

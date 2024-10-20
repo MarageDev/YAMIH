@@ -1,0 +1,10 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdsyquh25a5ti"]
+
+[ext_resource type="Script" path="res://InputManager/InputManager.gd" id="1_mgvjp"]
+[ext_resource type="Script" path="res://PlayerInputHandler/PlayerInputHandler.gd" id="2_lqr7f"]
+[ext_resource type="Resource" uid="uid://bgso4mjbvxske" path="res://PlayerInputHandler/Player_1.tres" id="3_f12hv"]
+[ext_resource type="Resource" uid="uid://cq1wde7lhot8m" path="res://PlayerInputHandler/Player_2.tres" id="4_ju150"]
+
+[node name="InputManager" type="Node"]
+script = ExtResource("1_mgvjp")
+PlayerInputs = Array[ExtResource("2_lqr7f")]([ExtResource("3_f12hv"), ExtResource("4_ju150")])

@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://cq1wde7lhot8m"]
+
+[ext_resource type="Script" path="res://Input/Input.gd" id="1_1bwb0"]
+[ext_resource type="Script" path="res://PlayerInputHandler/PlayerInputHandler.gd" id="2_40nkv"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ib0oq"]
+device = -1
+keycode = 4194320
+
+[sub_resource type="Resource" id="Resource_khjwd"]
+script = ExtResource("1_1bwb0")
+action_name = "Up"
+key = SubResource("InputEventKey_ib0oq")
+
+[sub_resource type="InputEventKey" id="InputEventKey_trsa6"]
+device = -1
+keycode = 4194321
+
+[sub_resource type="Resource" id="Resource_d6js1"]
+script = ExtResource("1_1bwb0")
+action_name = "Right"
+key = SubResource("InputEventKey_trsa6")
+
+[sub_resource type="InputEventKey" id="InputEventKey_edejt"]
+device = -1
+keycode = 4194319
+
+[sub_resource type="Resource" id="Resource_loq1o"]
+script = ExtResource("1_1bwb0")
+action_name = "Left"
+key = SubResource("InputEventKey_edejt")
+
+[sub_resource type="InputEventKey" id="InputEventKey_5h3hb"]
+device = -1
+keycode = 4194322
+
+[sub_resource type="Resource" id="Resource_rb4oc"]
+script = ExtResource("1_1bwb0")
+action_name = "Down"
+key = SubResource("InputEventKey_5h3hb")
+
+[resource]
+script = ExtResource("2_40nkv")
+PlayerIndex = 1
+PlayerName = "Guest"
+Inputs = Array[ExtResource("1_1bwb0")]([SubResource("Resource_khjwd"), SubResource("Resource_d6js1"), SubResource("Resource_loq1o"), SubResource("Resource_rb4oc")])

@@ -17,30 +17,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-ModularInputHandler="*res://ModularInputHandler.gd"
+ModularInputHandler="*res://PlayerInputHandler/PlayerInputHandler.gd"
 
 [dotnet]
 
 project/assembly_name="ModularInputs"
-
-[input]
-
-Up={
-"deadzone": 0.5,
-"events": []
-}
-Down={
-"deadzone": 0.5,
-"events": []
-}
-Right={
-"deadzone": 0.5,
-"events": []
-}
-Left={
-"deadzone": 0.5,
-"events": []
-}
 
 [rendering]
 
