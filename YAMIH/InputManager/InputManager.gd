@@ -5,8 +5,7 @@ class_name C_InputManager
 var Actions:Array[String]
 
 func _ready():
-	for i:C_PlayerInputHandler in Players:
-		write_actions_to_input_map(i,InputMap)
+	update_all_actions()
 
 func write_actions_to_input_map(Player:C_PlayerInputHandler,InputMapRef:Object = InputMap):
 	for InputRef in Player.Inputs:
@@ -14,3 +13,7 @@ func write_actions_to_input_map(Player:C_PlayerInputHandler,InputMapRef:Object =
 		InputMap.add_action(formated_action_name)
 		InputMap.action_add_event(formated_action_name,InputRef.input)
 		Actions.append(formated_action_name)
+
+func update_all_actions():
+	for i:C_PlayerInputHandler in Players:
+		write_actions_to_input_map(i,InputMap)
