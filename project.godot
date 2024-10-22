@@ -10,8 +10,9 @@ config_version=5
 
 [application]
 
-config/name="ModularInputs"
-run/main_scene="res://TestInputScene.tscn"
+config/name="YAMIH"
+config/description="Yet Another Multiplayer Input Handler"
+run/main_scene="res://Demo/TestInputScene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
@@ -23,6 +24,11 @@ ModularInputHandler="*res://PlayerInputHandler/PlayerInputHandler.gd"
 
 project/assembly_name="ModularInputs"
 
+[gui]
+
+theme/custom="res://Demo/Theme.tres"
+
 [rendering]
 
 renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

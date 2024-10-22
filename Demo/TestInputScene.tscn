@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbty3v4rnsm3v"]
+
+[ext_resource type="Script" path="res://test_input_scene_demo_.gd" id="1_nuclo"]
+[ext_resource type="PackedScene" uid="uid://bdsyquh25a5ti" path="res://InputManager/InputManager.tscn" id="2_jh3r2"]
+[ext_resource type="FontFile" uid="uid://6cpgjqwltpnf" path="res://Demo/Anonymous Pro I.ttf" id="7_hngal"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("InputManager")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nuclo")
+InputManager = NodePath("InputManager")
+
+[node name="InputManager" parent="." instance=ExtResource("2_jh3r2")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_top = 35
+theme_override_constants/margin_right = 35
+theme_override_constants/margin_bottom = 35
+
+[node name="FlowContainer" type="FlowContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/h_separation = 50
+theme_override_constants/v_separation = 50
+alignment = 1
+last_wrap_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 49.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "YAMIH"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.691357, 0.691357, 0.691357, 1)
+theme_override_colors/font_shadow_color = Color(0.194349, 0.194349, 0.194349, 1)
+theme_override_fonts/font = ExtResource("7_hngal")
+theme_override_font_sizes/font_size = 12
+text = "Yet Another Multiplayer Input Handler"
+horizontal_alignment = 1

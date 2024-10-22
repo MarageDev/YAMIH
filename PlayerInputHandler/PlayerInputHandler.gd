@@ -6,7 +6,6 @@ class_name C_PlayerInputHandler
 @export var PlayerName:String = "Player"
 @export var Inputs: Array[C_ModularInput]
 
-
 func attach_key_binding(InputRef: C_ModularInput, InputMapUsed: Object = InputMap):
 	InputMapUsed.add_action(InputRef.action_name)
 	InputMapUsed.action_add_event(InputRef.action_name, InputRef.key)
