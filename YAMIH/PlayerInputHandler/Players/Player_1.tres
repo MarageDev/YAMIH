@@ -1,49 +1,50 @@
-[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://bx8qwuljjk15t"]
+[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://bgso4mjbvxske"]
 
-[ext_resource type="Script" path="res://Input/Input.gd" id="1_rkwda"]
-[ext_resource type="Script" path="res://PlayerInputHandler/PlayerInputHandler.gd" id="2_1m0wp"]
+[ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_pjbrj"]
+[ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_8jefy"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_ib0oq"]
 device = -1
-keycode = 61
-unicode = 61
+keycode = 90
+unicode = 122
 
 [sub_resource type="Resource" id="Resource_khjwd"]
-script = ExtResource("1_rkwda")
+script = ExtResource("1_pjbrj")
 action_name = "Up"
 key = SubResource("InputEventKey_ib0oq")
 
 [sub_resource type="InputEventKey" id="InputEventKey_trsa6"]
 device = -1
-keycode = 92
-unicode = 42
+keycode = 68
+unicode = 100
 
 [sub_resource type="Resource" id="Resource_d6js1"]
-script = ExtResource("1_rkwda")
+script = ExtResource("1_pjbrj")
 action_name = "Right"
 key = SubResource("InputEventKey_trsa6")
 
 [sub_resource type="InputEventKey" id="InputEventKey_edejt"]
 device = -1
-keycode = 93
+keycode = 81
+unicode = 113
 
 [sub_resource type="Resource" id="Resource_loq1o"]
-script = ExtResource("1_rkwda")
+script = ExtResource("1_pjbrj")
 action_name = "Left"
 key = SubResource("InputEventKey_edejt")
 
 [sub_resource type="InputEventKey" id="InputEventKey_5h3hb"]
 device = -1
-keycode = 59
-unicode = 94
+keycode = 83
+unicode = 115
 
 [sub_resource type="Resource" id="Resource_rb4oc"]
-script = ExtResource("1_rkwda")
+script = ExtResource("1_pjbrj")
 action_name = "Down"
 key = SubResource("InputEventKey_5h3hb")
 
 [resource]
-script = ExtResource("2_1m0wp")
-PlayerIndex = 5
-PlayerName = "Zulu"
-Inputs = Array[ExtResource("1_rkwda")]([SubResource("Resource_khjwd"), SubResource("Resource_d6js1"), SubResource("Resource_loq1o"), SubResource("Resource_rb4oc")])
+script = ExtResource("2_8jefy")
+PlayerIndex = 0
+PlayerName = "Alpha"
+Inputs = Array[ExtResource("1_pjbrj")]([SubResource("Resource_khjwd"), SubResource("Resource_d6js1"), SubResource("Resource_loq1o"), SubResource("Resource_rb4oc")])

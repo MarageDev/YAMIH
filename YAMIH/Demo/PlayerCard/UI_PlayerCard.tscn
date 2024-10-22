@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbb3kdrypuwnw"]
 
-[ext_resource type="Script" path="res://Demo/PlayerCard/ui_player_card_script.gd" id="1_p4qhk"]
-[ext_resource type="Theme" uid="uid://g5200he4mcry" path="res://Demo/Theme.tres" id="2_p04s3"]
+[ext_resource type="Script" path="res://YAMIH/Demo/PlayerCard/ui_player_card_script.gd" id="1_p4qhk"]
+[ext_resource type="Theme" uid="uid://g5200he4mcry" path="res://YAMIH/Demo/Theme/Theme.tres" id="2_p04s3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvgx0"]
 

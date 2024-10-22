@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbty3v4rnsm3v"]
 
-[ext_resource type="Script" path="res://test_input_scene_demo_.gd" id="1_nuclo"]
-[ext_resource type="PackedScene" uid="uid://bdsyquh25a5ti" path="res://InputManager/InputManager.tscn" id="2_jh3r2"]
-[ext_resource type="FontFile" uid="uid://6cpgjqwltpnf" path="res://Demo/Anonymous Pro I.ttf" id="7_hngal"]
+[ext_resource type="Script" path="res://YAMIH/Demo/test_input_scene_demo_.gd" id="1_nuclo"]
+[ext_resource type="PackedScene" uid="uid://bdsyquh25a5ti" path="res://YAMIH/InputManager/InputManager.tscn" id="2_jh3r2"]
+[ext_resource type="FontFile" uid="uid://6cpgjqwltpnf" path="res://YAMIH/Demo/Theme/Anonymous Pro I.ttf" id="7_hngal"]
 
 [node name="Control" type="Control" node_paths=PackedStringArray("InputManager")]
 layout_mode = 3

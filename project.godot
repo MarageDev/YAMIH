@@ -12,21 +12,27 @@ config_version=5
 
 config/name="YAMIH"
 config/description="Yet Another Multiplayer Input Handler"
-run/main_scene="res://Demo/TestInputScene.tscn"
+run/main_scene="res://YAMIH/Demo/TestInputScene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-config/icon="res://icon.svg"
 
 [autoload]
 
-ModularInputHandler="*res://PlayerInputHandler/PlayerInputHandler.gd"
+ModularInputHandler="*res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd"
 
 [dotnet]
 
 project/assembly_name="ModularInputs"
 
+[file_customization]
+
+folder_colors={
+"res://YAMIH/": "purple",
+"res://YAMIH/Demo/": "blue"
+}
+
 [gui]
 
-theme/custom="res://Demo/Theme.tres"
+theme/custom="res://YAMIH/Demo/Theme/Theme.tres"
 
 [rendering]
 

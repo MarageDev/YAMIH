@@ -10,11 +10,12 @@ func _ready() -> void:
 		if !player_indexes.has(int(Action.split("_")[1])) : player_indexes.append(int(Action.split("_")[1]))
 	max_player_count = player_indexes.max() +1
 	for i in range(max_player_count):
-		var new_player_card:C_PlayerCard = preload("res://Demo/PlayerCard/UI_PlayerCard.tscn").instantiate()
+		var new_player_card:C_PlayerCard = preload("res://YAMIH/Demo/PlayerCard/UI_PlayerCard.tscn").instantiate()
 		flow_container.add_child(new_player_card)
-		new_player_card.l_player_name.text = InputManager.PlayerInputs[i].PlayerName
-		new_player_card.l_player_index.text = str(InputManager.PlayerInputs[i].PlayerIndex)
+		new_player_card.l_player_name.text = InputManager.Players[i].PlayerName
+		new_player_card.l_player_index.text = str(InputManager.Players[i].PlayerIndex)
 		player_cards.append(new_player_card)
+
 
 func _input(event):
 	for Action in InputMap.get_actions():
@@ -23,7 +24,7 @@ func _input(event):
 			var pressed_key:String
 			var player_name:String
 			var action:String = Action.split("_")[0]
-			for i:C_PlayerInputHandler in InputManager.PlayerInputs:
+			for i:C_PlayerInputHandler in InputManager.Players:
 				if i.PlayerIndex == player_index:
 					for j:C_ModularInput in i.Inputs:
 						if j.action_name == action :

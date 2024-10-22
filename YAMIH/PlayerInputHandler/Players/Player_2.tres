@@ -1,16 +1,19 @@
-[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://cq1wde7lhot8m"]
+[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=14 format=3 uid="uid://cq1wde7lhot8m"]
 
-[ext_resource type="Script" path="res://Input/Input.gd" id="1_1bwb0"]
-[ext_resource type="Script" path="res://PlayerInputHandler/PlayerInputHandler.gd" id="2_40nkv"]
+[ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_1bwb0"]
+[ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_40nkv"]
 
-[sub_resource type="InputEventKey" id="InputEventKey_ib0oq"]
-device = -1
-keycode = 4194320
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_mquf3"]
+axis = 1
+axis_value = -1.0
 
 [sub_resource type="Resource" id="Resource_khjwd"]
 script = ExtResource("1_1bwb0")
 action_name = "Up"
-key = SubResource("InputEventKey_ib0oq")
+input = SubResource("InputEventJoypadMotion_mquf3")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_0y0k7"]
+axis_value = 1.0
 
 [sub_resource type="InputEventKey" id="InputEventKey_trsa6"]
 device = -1
@@ -20,6 +23,10 @@ keycode = 4194321
 script = ExtResource("1_1bwb0")
 action_name = "Right"
 key = SubResource("InputEventKey_trsa6")
+input = SubResource("InputEventJoypadMotion_0y0k7")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_dk3e5"]
+axis_value = -1.0
 
 [sub_resource type="InputEventKey" id="InputEventKey_edejt"]
 device = -1
@@ -29,6 +36,11 @@ keycode = 4194319
 script = ExtResource("1_1bwb0")
 action_name = "Left"
 key = SubResource("InputEventKey_edejt")
+input = SubResource("InputEventJoypadMotion_dk3e5")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_ixji6"]
+axis = 1
+axis_value = 1.0
 
 [sub_resource type="InputEventKey" id="InputEventKey_5h3hb"]
 device = -1
@@ -38,6 +50,7 @@ keycode = 4194322
 script = ExtResource("1_1bwb0")
 action_name = "Down"
 key = SubResource("InputEventKey_5h3hb")
+input = SubResource("InputEventJoypadMotion_ixji6")
 
 [resource]
 script = ExtResource("2_40nkv")

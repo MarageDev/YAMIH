@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://6cpgjqwltpnf"
-path="res://.godot/imported/Anonymous Pro I.ttf-40ffd5f7fce21354f5eca3414e6e91bd.fontdata"
+uid="uid://cagel8v1fg1ud"
+path="res://.godot/imported/Anonymous Pro.ttf-9d8f58e634bff8dd0ad3660ff9a833f5.fontdata"
 
 [deps]
 
-source_file="res://Demo/Anonymous Pro I.ttf"
-dest_files=["res://.godot/imported/Anonymous Pro I.ttf-40ffd5f7fce21354f5eca3414e6e91bd.fontdata"]
+source_file="res://YAMIH/Demo/Theme/Anonymous Pro.ttf"
+dest_files=["res://.godot/imported/Anonymous Pro.ttf-9d8f58e634bff8dd0ad3660ff9a833f5.fontdata"]
 
 [params]
 
