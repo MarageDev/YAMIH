@@ -28,7 +28,7 @@ func _input(event):
 				if i.PlayerIndex == player_index:
 					for j:C_ModularInput in i.Inputs:
 						if j.action_name == action :
-							pressed_key = j.key.as_text_keycode()
+							pressed_key = j.input.as_text()
 			for i:C_PlayerCard in player_cards:
 				if i.l_player_index.text == str(player_index):
 					i.l_registered_action_name.text = Action

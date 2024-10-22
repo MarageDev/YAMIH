@@ -3,45 +3,45 @@
 [ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_ftfke"]
 [ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_aosb8"]
 
-[sub_resource type="InputEventKey" id="InputEventKey_ib0oq"]
+[sub_resource type="InputEventKey" id="InputEventKey_kbs8g"]
 device = -1
-keycode = 4194446
-unicode = 56
+keycode = 79
+unicode = 111
 
 [sub_resource type="Resource" id="Resource_khjwd"]
 script = ExtResource("1_ftfke")
 action_name = "Up"
-key = SubResource("InputEventKey_ib0oq")
+input = SubResource("InputEventKey_kbs8g")
 
-[sub_resource type="InputEventKey" id="InputEventKey_trsa6"]
+[sub_resource type="InputEventKey" id="InputEventKey_6isw0"]
 device = -1
-keycode = 4194444
-unicode = 54
+keycode = 77
+unicode = 109
 
 [sub_resource type="Resource" id="Resource_d6js1"]
 script = ExtResource("1_ftfke")
 action_name = "Right"
-key = SubResource("InputEventKey_trsa6")
+input = SubResource("InputEventKey_6isw0")
 
-[sub_resource type="InputEventKey" id="InputEventKey_edejt"]
+[sub_resource type="InputEventKey" id="InputEventKey_djy60"]
 device = -1
-keycode = 4194442
-unicode = 52
+keycode = 75
+unicode = 107
 
 [sub_resource type="Resource" id="Resource_loq1o"]
 script = ExtResource("1_ftfke")
 action_name = "Left"
-key = SubResource("InputEventKey_edejt")
+input = SubResource("InputEventKey_djy60")
 
-[sub_resource type="InputEventKey" id="InputEventKey_5h3hb"]
+[sub_resource type="InputEventKey" id="InputEventKey_tnsuy"]
 device = -1
-keycode = 4194440
-unicode = 50
+keycode = 76
+unicode = 108
 
 [sub_resource type="Resource" id="Resource_rb4oc"]
 script = ExtResource("1_ftfke")
 action_name = "Down"
-key = SubResource("InputEventKey_5h3hb")
+input = SubResource("InputEventKey_tnsuy")
 
 [resource]
 script = ExtResource("2_aosb8")

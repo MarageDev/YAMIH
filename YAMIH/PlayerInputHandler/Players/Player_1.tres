@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_pjbrj"]
 [ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_8jefy"]
 
-[sub_resource type="InputEventKey" id="InputEventKey_ib0oq"]
+[sub_resource type="InputEventKey" id="InputEventKey_48vq6"]
 device = -1
 keycode = 90
 unicode = 122
@@ -11,9 +11,9 @@ unicode = 122
 [sub_resource type="Resource" id="Resource_khjwd"]
 script = ExtResource("1_pjbrj")
 action_name = "Up"
-key = SubResource("InputEventKey_ib0oq")
+input = SubResource("InputEventKey_48vq6")
 
-[sub_resource type="InputEventKey" id="InputEventKey_trsa6"]
+[sub_resource type="InputEventKey" id="InputEventKey_4d73m"]
 device = -1
 keycode = 68
 unicode = 100
@@ -21,9 +21,9 @@ unicode = 100
 [sub_resource type="Resource" id="Resource_d6js1"]
 script = ExtResource("1_pjbrj")
 action_name = "Right"
-key = SubResource("InputEventKey_trsa6")
+input = SubResource("InputEventKey_4d73m")
 
-[sub_resource type="InputEventKey" id="InputEventKey_edejt"]
+[sub_resource type="InputEventKey" id="InputEventKey_3741u"]
 device = -1
 keycode = 81
 unicode = 113
@@ -31,9 +31,9 @@ unicode = 113
 [sub_resource type="Resource" id="Resource_loq1o"]
 script = ExtResource("1_pjbrj")
 action_name = "Left"
-key = SubResource("InputEventKey_edejt")
+input = SubResource("InputEventKey_3741u")
 
-[sub_resource type="InputEventKey" id="InputEventKey_5h3hb"]
+[sub_resource type="InputEventKey" id="InputEventKey_r7l53"]
 device = -1
 keycode = 83
 unicode = 115
@@ -41,7 +41,7 @@ unicode = 115
 [sub_resource type="Resource" id="Resource_rb4oc"]
 script = ExtResource("1_pjbrj")
 action_name = "Down"
-key = SubResource("InputEventKey_5h3hb")
+input = SubResource("InputEventKey_r7l53")
 
 [resource]
 script = ExtResource("2_8jefy")
