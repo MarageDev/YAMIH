@@ -4,6 +4,8 @@ YAMIH *( Yet Another Multiplayer Input Handler )* is an attempt at creating a mo
 
 It can support at least 6 players ( tested ), but it can probably support even more players as long as you have enough unique inputs.
 
+> Godot 4.3 - 4.8 
+
 ![image](https://github.com/user-attachments/assets/f5494e0d-4745-4ec3-8507-7be287239a1f)
 
 
