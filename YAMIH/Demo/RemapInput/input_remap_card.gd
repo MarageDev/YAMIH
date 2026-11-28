@@ -10,5 +10,5 @@ func _on_button_remap_pressed() -> void:
 	is_remapping = true
 
 func _update_text(action_name:String, remapping_key:String):
-	remapping_input_key.text = remapping_key
-	remapped_action.text = action_name
+	if remapping_key : remapping_input_key.text = remapping_key
+	if action_name : remapped_action.text = action_name
