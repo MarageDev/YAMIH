@@ -6,8 +6,7 @@ It can support at least 6 players ( tested ), but it can probably support even m
 
 > Godot 4.3 - 4.8 
 
-![image](https://github.com/user-attachments/assets/f5494e0d-4745-4ec3-8507-7be287239a1f)
-
+<img width="1146" height="642" alt="image" src="https://github.com/user-attachments/assets/8ca67330-b0b4-41e2-a068-f576ce50f9a9" />
 
 
 <h2>Presentation</h2>
@@ -49,7 +48,7 @@ var Actions:Array[String]
 func _ready():
 	update_all_actions()
 
-func write_actions_to_input_map(Player:C_PlayerInputHandler,InputMapRef:Object = InputMap):
+func write_actions_to_input_map(Player:C_PlayerInputHandler):
 	for InputRef in Player.Inputs:
 		var formated_action_name:String = str(InputRef.action_name,"_",Player.PlayerIndex)
 		InputMap.add_action(formated_action_name)
@@ -58,7 +57,17 @@ func write_actions_to_input_map(Player:C_PlayerInputHandler,InputMapRef:Object =
 
 func update_all_actions():
 	for i:C_PlayerInputHandler in Players:
-		write_actions_to_input_map(i,InputMap)
+		write_actions_to_input_map(i)
+
+func remap_action(input_action_name:String, input_action_event:InputEvent, remapping_input:InputEvent):
+	if InputMap.has_action(input_action_name) : 
+		InputMap.action_erase_event(input_action_name, input_action_event)
+	InputMap.action_add_event(input_action_name, remapping_input)
+	
+	# Update the Input array from the player input handler
+	for input:C_ModularInput in Players[int(input_action_name.split("_")[1])].Inputs : 
+		if input.action_name == str(input_action_name.split("_")[0]):
+			input.input = remapping_input
 ```
 - `Players` stores all the players with their associated actions ( class of `C_PlayerInputHandler`, see above ).
 
@@ -66,9 +75,12 @@ func update_all_actions():
 
 - `update_all_actions` is used if you plan to add/remove another player while playing.
 
+- `remap_action` is used when remapping the input event of an action by a new one (see demo)
+
 <h2>Demo</h2>
 <h3>Principle</h3>
 
-It adds `UI_PlayerCard.tscn` for each registered players in the `InputManager.tscn` node referenced as an export, and display the action, name, player index on the according card. It's mainly here to verify that everything works correctly.
+It adds `UI_PlayerCard.tscn` for each registered players in the `InputManager.tscn` node referenced as an export, and display the action, name, player index on the according card. There's also a sub-demo for input remapping.
+It's mainly here to verify that everything works correctly.
 
 ![image](https://github.com/user-attachments/assets/f5494e0d-4745-4ec3-8507-7be287239a1f)
