@@ -1,11 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bdsyquh25a5ti"]
+[gd_scene format=3 uid="uid://bdsyquh25a5ti"]
 
-[ext_resource type="Script" path="res://YAMIH/InputManager/InputManager.gd" id="1_mgvjp"]
-[ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_lqr7f"]
+[ext_resource type="Script" uid="uid://c3w68mxcl0im4" path="res://YAMIH/InputManager/InputManager.gd" id="1_mgvjp"]
+[ext_resource type="Script" uid="uid://bhwotu6ioi5nn" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_lqr7f"]
 [ext_resource type="Resource" uid="uid://bgso4mjbvxske" path="res://YAMIH/PlayerInputHandler/Players/Player_1.tres" id="3_f12hv"]
 [ext_resource type="Resource" uid="uid://cq1wde7lhot8m" path="res://YAMIH/PlayerInputHandler/Players/Player_2.tres" id="4_ju150"]
 [ext_resource type="Resource" uid="uid://cljfw1vmwvl67" path="res://YAMIH/PlayerInputHandler/Players/Player_3.tres" id="5_vjujg"]
 
-[node name="InputManager" type="Node"]
+[node name="InputManager" type="Node" unique_id=1633556611]
 script = ExtResource("1_mgvjp")
 Players = Array[ExtResource("2_lqr7f")]([ExtResource("3_f12hv"), ExtResource("4_ju150"), ExtResource("5_vjujg")])

@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://bgso4mjbvxske"]
+[gd_resource type="Resource" script_class="C_PlayerInputHandler" format=3 uid="uid://bgso4mjbvxske"]
 
-[ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_pjbrj"]
-[ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_8jefy"]
+[ext_resource type="Script" uid="uid://1xdjmq1gprkt" path="res://YAMIH/Input/Input.gd" id="1_pjbrj"]
+[ext_resource type="Script" uid="uid://bhwotu6ioi5nn" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_8jefy"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_48vq6"]
 device = -1
@@ -45,6 +45,5 @@ input = SubResource("InputEventKey_r7l53")
 
 [resource]
 script = ExtResource("2_8jefy")
-PlayerIndex = 0
 PlayerName = "Alpha"
 Inputs = Array[ExtResource("1_pjbrj")]([SubResource("Resource_khjwd"), SubResource("Resource_d6js1"), SubResource("Resource_loq1o"), SubResource("Resource_rb4oc")])

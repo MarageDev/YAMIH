@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="C_PlayerInputHandler" load_steps=11 format=3 uid="uid://cljfw1vmwvl67"]
+[gd_resource type="Resource" script_class="C_PlayerInputHandler" format=3 uid="uid://cljfw1vmwvl67"]
 
-[ext_resource type="Script" path="res://YAMIH/Input/Input.gd" id="1_ftfke"]
-[ext_resource type="Script" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_aosb8"]
+[ext_resource type="Script" uid="uid://1xdjmq1gprkt" path="res://YAMIH/Input/Input.gd" id="1_ftfke"]
+[ext_resource type="Script" uid="uid://bhwotu6ioi5nn" path="res://YAMIH/PlayerInputHandler/PlayerInputHandler.gd" id="2_aosb8"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_kbs8g"]
 device = -1

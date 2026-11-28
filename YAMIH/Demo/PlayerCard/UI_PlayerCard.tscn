@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dbb3kdrypuwnw"]
+[gd_scene format=3 uid="uid://dbb3kdrypuwnw"]
 
-[ext_resource type="Script" path="res://YAMIH/Demo/PlayerCard/ui_player_card_script.gd" id="1_p4qhk"]
+[ext_resource type="Script" uid="uid://b3shgjgj37a5s" path="res://YAMIH/Demo/PlayerCard/ui_player_card_script.gd" id="1_p4qhk"]
 [ext_resource type="Theme" uid="uid://g5200he4mcry" path="res://YAMIH/Demo/Theme/Theme.tres" id="2_p04s3"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvgx0"]
@@ -14,7 +14,7 @@ corner_radius_bottom_left = 5
 shadow_color = Color(1, 1, 1, 0.313726)
 shadow_size = 7
 
-[node name="UiPlayerCard" type="Control"]
+[node name="UiPlayerCard" type="Control" unique_id=901372515]
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 3
 anchors_preset = 0
@@ -22,7 +22,7 @@ offset_right = 300.0
 offset_bottom = 150.0
 script = ExtResource("1_p4qhk")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=264838433]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,7 +30,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Panel" unique_id=2115631798]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -42,91 +42,98 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer" unique_id=1636646695]
 layout_mode = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=1842675719]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=2053619002]
 layout_mode = 2
 theme = ExtResource("2_p04s3")
 text = "Name : "
 
-[node name="l_PlayerName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="PlayerName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=176745369]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Player"
 text_overrun_behavior = 3
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=2143407374]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=2114163616]
 layout_mode = 2
 text = "Index : "
 
-[node name="l_PlayerIndex" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="PlayerIndex" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer" unique_id=295093797]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "0"
 text_overrun_behavior = 3
 
-[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/VBoxContainer" unique_id=1378889405]
 layout_mode = 2
 theme_override_constants/separation = 10
 theme_override_styles/separator = SubResource("StyleBoxEmpty_pvgx0")
 
-[node name="Panel" type="Panel" parent="Panel/MarginContainer/VBoxContainer/HSeparator"]
+[node name="Panel" type="Panel" parent="Panel/MarginContainer/VBoxContainer/HSeparator" unique_id=1654449466]
 custom_minimum_size = Vector2(0, 2)
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
+offset_top = -1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_t7ui0")
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=1880421684]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer4"]
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer4" unique_id=2045831139]
 layout_mode = 2
 text = "Input : "
 
-[node name="l_Input" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer4"]
+[node name="Input" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer4" unique_id=1680132763]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Null"
 text_overrun_behavior = 3
 
-[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=1229264099]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer5"]
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer5" unique_id=1080667064]
 layout_mode = 2
 text = "Action Name : "
 
-[node name="l_ActionName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer5"]
+[node name="ActionName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer5" unique_id=168851146]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Null"
 text_overrun_behavior = 3
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer" unique_id=2009088924]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1540978700]
 layout_mode = 2
 text = "Registered Action Name : "
 
-[node name="l_RegisteredActionName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="RegisteredActionName" type="Label" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1729466388]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Null"
