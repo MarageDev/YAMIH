@@ -35,7 +35,8 @@ func _input(event:InputEvent):
 		if event.is_action_pressed(Action) and !Action.begins_with("ui"): # retrieve pressed action and exlcude "ui" actions
 			last_pressed_input_event = event
 			last_pressed_input_name = Action
-			print(Action)
+			input_remap_card._update_text(last_pressed_input_name,"")
+			
 	if input_remap_card.is_remapping : 
 		if event is not InputEventMouse :
 			input_remap_card._update_text(last_pressed_input_name, event.as_text())

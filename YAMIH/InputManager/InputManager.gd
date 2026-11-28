@@ -22,4 +22,8 @@ func remap_action(input_action_name:String, input_action_event:InputEvent, remap
 	if InputMap.has_action(input_action_name) : 
 		InputMap.action_erase_event(input_action_name, input_action_event)
 	InputMap.action_add_event(input_action_name, remapping_input)
-	print(Actions)
+	
+	# Update the Input array from the player input handler
+	for input:C_ModularInput in Players[int(input_action_name.split("_")[1])].Inputs : 
+		if input.action_name == str(input_action_name.split("_")[0]):
+			input.input = remapping_input
